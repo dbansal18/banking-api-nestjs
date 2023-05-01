@@ -10,7 +10,9 @@ import {
 import { NeftsService } from './nefts.service';
 import { CreateNeftDto } from './dto/create-neft.dto';
 import { UpdateNeftDto } from './dto/update-neft.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('nefts')
 @Controller('nefts')
 export class NeftsController {
   constructor(private readonly neftsService: NeftsService) {}
