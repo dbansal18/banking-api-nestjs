@@ -4,6 +4,6 @@ import { NeftsController } from './nefts.controller';
 
 @Module({
   controllers: [NeftsController],
-  providers: [NeftsService]
+  providers: [NeftsService],
 })
 export class NeftsModule {}

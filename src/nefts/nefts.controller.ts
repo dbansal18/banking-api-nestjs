@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { NeftsService } from './nefts.service';
 import { CreateNeftDto } from './dto/create-neft.dto';
 import { UpdateNeftDto } from './dto/update-neft.dto';
