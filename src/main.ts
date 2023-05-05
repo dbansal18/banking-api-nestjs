@@ -11,7 +11,9 @@ async function bootstrap() {
     .setVersion('1.0')
     .addTag('banking')
     .build();
-  const document = SwaggerModule.createDocument(app, config);
+  const document = SwaggerModule.createDocument(app, config, {
+    deepScanRoutes: true,
+  });
   SwaggerModule.setup('api', app, document);
 
   await app.listen(3000);
